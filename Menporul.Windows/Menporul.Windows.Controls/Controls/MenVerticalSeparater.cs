@@ -10,7 +10,7 @@ namespace Menporul.Windows.Controls
     /// <summary>
     /// Vertical Separator
     /// </summary>
-    /// /// <author>Vignesh Nethaji</author>
+    /// <author>Vignesh Nethaji</author>
     public class MenVerticalSeparater : UserControl
     {
         /// <summary>
