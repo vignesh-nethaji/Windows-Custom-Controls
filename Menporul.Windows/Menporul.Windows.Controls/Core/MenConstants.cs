@@ -8,16 +8,44 @@ namespace Menporul.Windows.Controls.Core
 {
     public class MenConstants
     {
-        
         #region Windows Message ID's
         /// <summary>
-        /// Form Caption area or Titlebar Area
+        /// 
         /// </summary>
-        public const int HT_CAPTION = 0x2;
+        public const int WM_NCPAINT = 0x85;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_PAINT = 0x000F;
+
         /// <summary>
         /// Control Transparency Message ID 
         /// </summary>
         public const int WM_NCHITTEST = 0x84;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_LBUTTONDOWN = 0x0201;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_LBUTTONUP = 0x0202;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_NCLBUTTONDOWN = 0x00A1;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_NCLBUTTONUP = 0x00A2;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_MOUSEMOVE = 0x0200;
+        /// <summary>
+        /// 
+        /// </summary>
+        public const int WM_NCMOUSEMOVE = 0x00A0;
         /// <summary>
         /// Client Area Left Double Click Message ID
         /// </summary>
@@ -26,6 +54,26 @@ namespace Menporul.Windows.Controls.Core
         ///  Client Non Area Left Double Click Message ID
         /// </summary>
         public const int WM_NCLBUTTONDBLCLK = 0x00A3;//non-client area
+        /// <summary>
+        /// Horizontal Scroll Bar Message Id
+        /// </summary>
+        public const int WM_HSCROLL = 0x0114;
+        /// <summary>
+        /// vertical Scroll bar Message Id
+        /// </summary>
+        public const int WM_VSCROLL = 0x0115;
+        /// <summary>
+        /// MOuseWheel Message Id
+        /// </summary>
+        public const int WM_MOUSEWHEEL = 0x020A;
+        /// <summary>
+        /// KeyDown Message Id
+        /// </summary>
+        public const int WM_KEYDOWN = 0x0100;
+        /// <summary>
+        /// Form Caption area or Titlebar Area
+        /// </summary>
+        public const int HT_CAPTION = 0x2;
         /// <summary>
         ///  Client Form Left End Drag Arrow Message ID
         /// </summary>
@@ -59,13 +107,13 @@ namespace Menporul.Windows.Controls.Core
         /// </summary>
         public const int HT_BOTTOMRIGHT = 17;
         /// <summary>
-        /// 
+        /// scrollBar Horizontal Type 
         /// </summary>
-        public const int WM_NCPAINT = 0x85;
+        public const int SB_HORZ = 0;
         /// <summary>
-        /// 
+        /// Scrollbar Vertival Type
         /// </summary>
-        public const int WM_PAINT = 0x000F;
+        public const int SB_VERT = 1;
 
         #endregion
 
@@ -125,6 +173,11 @@ namespace Menporul.Windows.Controls.Core
         /// Constant for Vertical Separator Color 
         /// </summary>
         public static readonly Color VerticalSeparator = ColorTranslator.FromHtml("#B4B4B4");
+
+        /// <summary>
+        /// Constant for Horizontal Separator Color 
+        /// </summary>
+        public static readonly Color HorizontalSeparator = LightGrey;  
 
         #region TitleBar Colors
         /// <summary>
@@ -255,9 +308,17 @@ namespace Menporul.Windows.Controls.Core
 
         #region Progress Bar Color
         /// <summary>
-        /// Progress bar 
+        /// Progress bar Percentage
         /// </summary>
-        public static readonly Color ProgressBarPercentage = HighLightBlue;
+        public static readonly Color PBPercentage = HighLightBlue;
+        /// <summary>
+        /// Progress bar Text
+        /// </summary>
+        public static readonly Color PBText = Dark;
+        /// <summary>
+        /// Progress bar Border
+        /// </summary>
+        public static readonly Color PBBorder = LightGrey;
         #endregion
 
         #region Context Menus Colors
