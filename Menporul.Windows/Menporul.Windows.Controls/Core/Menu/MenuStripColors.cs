@@ -8,8 +8,9 @@ using System.Windows.Forms;
 namespace Menporul.Windows.Controls.Core
 {
     /// <summary>
-    /// 
+    /// Menporul MenuStripColors
     /// </summary>
+    /// <author>Vignesh Nethaji</author>
     internal class MenuStripColors : ProfessionalColorTable
     {
         /// <summary>
