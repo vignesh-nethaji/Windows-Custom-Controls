@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\MenContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MenProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -54,7 +57,23 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Core\MenConstants.cs" />
+    <Compile Include="Core\Menu\MenMenuStripColorRenderer.cs" />
+    <Compile Include="Core\Menu\MenuStripColors.cs" />
+    <Compile Include="MenResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
