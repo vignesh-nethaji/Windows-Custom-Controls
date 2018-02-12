@@ -10,7 +10,7 @@ namespace Menporul.Windows.Controls.Core
     /// Menporul MenuStripColorRenderer
     /// </summary>
     /// <author>Vignesh Nethaji</author>
-    public class MenuStripColorRenderer : ToolStripProfessionalRenderer
+    public class MenMenuStripColorRenderer : ToolStripProfessionalRenderer
     {
         /// <summary>
         /// 
@@ -19,7 +19,8 @@ namespace Menporul.Windows.Controls.Core
         /// <summary>
         /// 
         /// </summary>
-        public MenuStripColorRenderer() : base(new MenuStripColors())
+        public MenMenuStripColorRenderer()
+            : base(new MenuStripColors())
         {
             this.RoundedEdges = false;
         }
