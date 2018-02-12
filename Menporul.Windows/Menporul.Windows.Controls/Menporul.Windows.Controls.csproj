@@ -41,10 +41,82 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\MenRibbonTab\MenRibbonButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\MenRibbonButtonType.cs" />
+    <Compile Include="Controls\MenRibbonTab\MenRibbonConstants.cs" />
+    <Compile Include="Controls\MenRibbonTab\MenRibbonControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\MenRibbonPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\MenRibbonTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\MenRibbonTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\TabStyleProviders\DefaultTabStyleProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\TabStyleProviders\TabStyleProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRibbonTab\TabStyleProviders\ThemedColors.cs" />
+    <Compile Include="Controls\MenBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MenBaseForm.Designer.cs">
+      <DependentUpon>MenBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenDarkPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenTitlebar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenTitlebar.Designer.cs">
+      <DependentUpon>MenTitlebar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenFormBorderSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenTransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenNormalButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenPrimaryButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MenContextMenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MenProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenToolStrip.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MenToolTip.cs">
@@ -53,12 +125,28 @@
     <Compile Include="Controls\MenHorizontalSeparater.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controls\MenTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenTreeViewCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MenVerticalSeparater.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controls\MessageBox\MenMessageBox.cs" />
+    <Compile Include="Controls\MessageBox\MenMessageBoxTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageBox\MenMessageBoxTemplate.Designer.cs">
+      <DependentUpon>MenMessageBoxTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\MenWindowsState.cs" />
     <Compile Include="Core\MenConstants.cs" />
     <Compile Include="Core\Menu\MenMenuStripColorRenderer.cs" />
     <Compile Include="Core\Menu\MenuStripColors.cs" />
+    <Compile Include="Core\ToolStrip\MenToolStripColorRenderer.cs" />
+    <Compile Include="Core\ToolStrip\MenToolStripColors.cs" />
     <Compile Include="MenResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +155,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\MenBaseForm.resx">
+      <DependentUpon>MenBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenTitlebar.resx">
+      <DependentUpon>MenTitlebar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MessageBox\MenMessageBoxTemplate.resx">
+      <DependentUpon>MenMessageBoxTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MenResource.Designer.cs</LastGenOutput>
@@ -74,6 +171,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircleFill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HoverCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CollapseDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CollapseOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FMMoreMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBoxError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBoxExclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBoxInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBoxQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBoxWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
