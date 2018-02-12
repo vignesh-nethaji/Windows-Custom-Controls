@@ -23,7 +23,7 @@ namespace Menporul.Windows.Controls
         public MenVerticalSeparater()
         {
             this.SuspendLayout();
-            this.Name = "CafeVerticalSeparator";
+            this.Name = "MenVerticalSeparator";
             this.Size = new System.Drawing.Size(1, 100);
             this.ResumeLayout(false);
         }

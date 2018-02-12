@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Menporul.Windows.Controls.Core;
+
 namespace Menporul.Windows.Controls
 {
     /// <summary>
@@ -15,7 +17,7 @@ namespace Menporul.Windows.Controls
         /// <summary>
         /// Pen for Background Color of this control
         /// </summary>
-        private Pen _penBackGround = new Pen(Core.MenConstants.HorizontalSeparator);
+        private Pen _penBackGround = new Pen(MenConstants.HorizontalSeparator);
         /// <summary>
         /// Initialize default height and Width of Menporul Horizontal Separator
         /// </summary>

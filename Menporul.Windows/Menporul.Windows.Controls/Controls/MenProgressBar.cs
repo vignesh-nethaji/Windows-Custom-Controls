@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Menporul.Windows.Controls.Core;
 
 namespace Menporul.Windows.Controls
 {
@@ -16,11 +17,11 @@ namespace Menporul.Windows.Controls
         /// <summary>
         /// Progress Color 
         /// </summary>
-        private SolidBrush _bshPercentage = new SolidBrush(Core.MenConstants.PBPercentage);
+        private SolidBrush _bshPercentage = new SolidBrush(MenConstants.PBPercentage);
         /// <summary>
         /// Progress Text Color
         /// </summary>
-        private SolidBrush _bshText = new SolidBrush(Core.MenConstants.PBText);
+        private SolidBrush _bshText = new SolidBrush(MenConstants.PBText);
         /// <summary>
         /// Border color of Progress bar
         /// </summary>
