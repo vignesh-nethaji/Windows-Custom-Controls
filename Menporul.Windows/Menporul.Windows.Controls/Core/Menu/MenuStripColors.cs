@@ -7,6 +7,9 @@ using System.Windows.Forms;
 
 namespace Menporul.Windows.Controls.Core
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class MenuStripColors : ProfessionalColorTable
     {
         /// <summary>
